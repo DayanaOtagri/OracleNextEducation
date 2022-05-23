@@ -1,0 +1,222 @@
+:root {
+    --color-azul: #0A3871;
+    --color-gris: #495057;
+
+}
+
+body{
+    padding: 10px;
+    margin: 5px;
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    flex-direction: column;
+    background-image: url("./img/colores.png");
+    background-size: 2000px;
+}
+
+h2{
+    position: absolute;
+    width: 343px;
+    height: 48px;
+    left: 16px;
+    top: 152px;
+    color: var(--color-azul);
+}
+
+.imagenAlura{
+    width: 8%;
+}
+
+.texto{
+    flex-direction: column;
+    position: relative;
+    top: 150px;
+    border: none;
+}
+
+textarea {
+    resize: none;
+}
+
+::placeholder {
+    color: var(--color-azul);
+    font-weight: 1000;
+    font-size: 1.5em;
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+  }
+
+.soloMinusculas{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    position: relative;
+    top: 155px;
+    left: 16px;
+
+}
+
+.textoInfo{
+    position: relative;
+    left: 16px;
+    color: black;
+}
+
+.btns{
+    display: flexbox;
+    flex-direction: row;
+    position: relative;
+    top: 180px;
+    
+}
+
+.encriptar{
+    background: #0A3871;
+    border-radius: 24px;
+    width: 343px;
+    height: 67px;
+    color: #F3F5FC;
+    margin: 24px 0px;
+    
+}
+
+.desencriptar{
+    border: 1px solid #0A3871;
+    border-radius: 24px;
+    width: 343px;
+    height: 67px;
+    color: #0A3871;
+}
+
+.encriptador{
+    flex-direction: row;
+    position: relative;
+    top: 200px;
+    background: #FFFFFF;
+    box-shadow: 0px 24px 32px -8px rgba(0, 0, 0, 0.08);
+    border-radius: 32px;
+    width: 325px;
+    height: 125px;
+    text-align: center;
+}
+
+.muñeco{
+    display: none;
+    visibility: hidden;
+}
+
+h3{
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 120%;
+    text-align: center;
+}
+
+
+@media (min-width: 1200px) {
+    
+    body{
+        padding: 10px;
+        margin: 10px;
+        font-family: 'Inter', sans-serif;
+        font-style: normal;
+        background-image: url("./img/colores.png");
+    }    
+    
+    .imagenAlura{
+        width: 3%;
+    }
+
+    h2{
+        display: flex;
+        position: absolute;
+        top: 100px;
+        left: 250px;
+    }    
+
+    textarea::placeholder{
+        color: var(--color-azul);
+    }
+
+
+    .texto{
+        position: absolute;
+        top: 160px;
+        border: none;
+        width: 800px;
+        height: 450px;
+        left: 65px;
+        resize: none;
+    }    
+
+
+      .soloMinusculas {
+        display: flex;
+        position: absolute;
+        top: 630px;
+        left: 60px;
+        visibility: hidden;
+    }
+
+    .textoInfo{
+        color: black;
+    }
+
+
+    .btns{
+        display: flexbox;
+        flex-direction: row;
+        position: absolute;
+        top: 670px;
+        left: 60px;
+    }
+
+    .encriptar{
+        cursor: pointer;
+    }
+
+    .desencriptar {
+        position: relative;
+        left: 50px;
+        cursor: pointer;
+    }
+
+
+    .encriptador {
+
+        position: absolute;
+        left: 950px;
+        top: 60px;
+        width: 700px;
+        height: 700px;
+    }
+
+
+    .muñeco{
+        display:flex;
+        visibility: visible;
+        position: relative;
+        top: 70px;
+        left: 190px;
+        width: 400px;
+    }
+
+
+    .mensaje{
+        position: relative;
+        top: 80px;
+    }
+
+    .mensaje2{
+        position: relative;
+        top: 80px;
+    }
+
+
+
+
+
+
+}
